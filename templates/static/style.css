@@ -1,0 +1,9 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+.pessoas{
+    display: flex;
+    gap: 10px;
+}
