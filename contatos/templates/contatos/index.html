@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{%block 'title'%}AGENDA{%endblock%}
+
+{%block 'conteudo'%}
+<h2>Estamos no index</h2>
+<a href="{%url 'sobre'%}">Sobre</a>
+
+{%for i in contatos%}
+<div class="pessoas">
+    <h3><a href="#">{{i.nome}}</a></h3>
+    <h3>{{i.sobrenome}}</h3>
+    <h3>{{i.email}}</h3>
+    <h3>{{i.categoria}}</h3> 
+</div>
+{%endfor%}
+
+
+{%endblock%}
