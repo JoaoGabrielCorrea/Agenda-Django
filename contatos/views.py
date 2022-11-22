@@ -4,7 +4,7 @@ from .models import Contato
 
 # Create your views here.
 def index(request):
-    contatos = Contato.objects.all()
+    contatos = contato.objects.all()
     return render(request,'contatos/index.html',{
         'contatos':contatos
         })
